@@ -1,0 +1,19 @@
+syntax = "proto3";
+
+package hw;
+
+message FullName {
+    string fname = 1;
+    string sname = 2;
+    optional string patronymic = 3;
+}
+
+message Student { 
+    FullName name = 1;
+    repeated int32 evaluations = 2 [packed=true];
+    double average = 3;
+}
+
+message StudentsGroup {
+    repeated Student students = 1;
+}
