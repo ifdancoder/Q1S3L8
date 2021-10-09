@@ -1,0 +1,6 @@
+[requires]
+protobuf/3.13.0
+gtest/1.10.0
+
+[generators]
+visual_studio

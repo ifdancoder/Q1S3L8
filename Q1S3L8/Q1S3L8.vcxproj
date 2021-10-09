@@ -68,6 +68,7 @@
   </ImportGroup>
   <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
     <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+    <Import Project="conanbuildinfo.props" />
   </ImportGroup>
   <PropertyGroup Label="UserMacros" />
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
@@ -139,7 +140,15 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClCompile Include="hw.pb.cc" />
     <ClCompile Include="Q1S3L8.cpp" />
+    <ClCompile Include="StudentsGroup.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="hw.pb.h" />
+    <ClInclude Include="IMethods.h" />
+    <ClInclude Include="IRepository.h" />
+    <ClInclude Include="StudentsGroup.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
